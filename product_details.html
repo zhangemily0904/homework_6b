@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fluff Stuff</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="PUI Homework 5">
+  <meta name="keywords" content="HTML, JavaScript, CSS">
+  <meta name="author" content="Emily Zhang">
+  <link rel="stylesheet" href="styles.css"> 
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- navbar -->
+    <div class="navbar">
+      <!-- nav bar logo -->
+      <div class="logo">
+        <img src="images/logo1.png" width="300" alt="logo">
+      </div>
+
+      <!-- nav bar buttons -->
+      <nav>
+        <ul>
+          <li><a href="">Search</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a id="cart-nav" href="shopping_cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- space -->
+    <br><br><br><br><br><br><br>
+
+    <div class="row">
+      <div class="col-2">
+        <section class="product-details">
+          <div class="image-slider">
+            <div class="product-images">
+              <img src="images/couch_pillow.png" alt="">
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-2">
+        <section>
+          <!-- individual product details -->
+          <div class="details">
+            <!-- product name and price -->
+            <h2 id="product-name">COUCH PILLOW</h2><br>
+            <span id="product-price"><strong>$79.00</strong></span><br><br>
+            
+            <!-- product rating -->
+            <div class="rating">
+              <div class="star">
+                <img src="images/rating.png" alt="star">
+                <img src="images/rating.png" alt="star">
+                <img src="images/rating.png" alt="star">
+                <img src="images/rating.png" alt="star">
+                <img src="images/rating.png" alt="star">
+              </div>
+              <div class="reviews">
+                <p>5.0 | 100 reviews</p>
+              </div>
+            </div><br>
+
+            <!-- color selection -->
+            <p id="color-selection" class="product-subheading"><strong>Color: Morning Haze</strong></p>
+            <input type="button" onclick="updateColor('Morning Haze')" value="Morning Haze">
+            <input type="button" onclick="updateColor('Rainy Day')" value="Rainy Day">
+            <input type="button" onclick="updateColor('After School Special')" value="After School Special">
+            <input type="button" onclick="updateColor('Cozy Denim')" value="Cozy Denim"><br><br>
+
+            <!-- fill selection -->
+            <p id="fill-selection" class="product-subheading"><strong>Fill: Duck Down</strong></p>
+            <input type="button" onclick="updateFill('Duck Down')" value="Duck Down">
+            <input type="button" onclick="updateFill('Hypoallergenic')" value="Hypoallergenic">
+            <input type="button" onclick="updateFill('Memory Foam')" value="Memory Foam"><br><br>
+
+            <!-- product description -->
+            <p class="product-subheading"><strong>Description:</strong></p>
+            <p class="product-description">Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit. Suspendisse ut mollis erat, vel 
+              fringilla neque. Phasellus et metus eget orci viverra mattis. 
+              Sed ac lacus turpis. Vestibulum tincidunt luctus molestie. 
+              Ut tempor tortor vehicula, placerat est dapibus, rutrum enim.</p>
+          </div><br>
+
+          <!-- add to cart button -->
+          <button class="add-to-cart-btn" onclick="addToCart()">ADD TO BAG</button>
+        </section>
+      </div>
+    </div>
+
+    
+    
+
+
+    
+  </div>  
+  
+</body>
+</html>
